@@ -138,10 +138,10 @@ body {
     padding:0;
 }
 
-.work ul li a {
+.work ul li p {
     display: block;
     text-align: left;
-    padding: 25px 0px;
+    padding: 10px 0px;
     text-decoration: none;
     color: white;
     font-family: "Courier New";
@@ -170,20 +170,26 @@ body {
     width: 100px;
     background-color:red;
     position: relative;
+
+    top:50%;
 }
 
 .block {
-    height: 69px;
+    height: 70px;
     left: 0;
     right: 0;
     position: relative;
     overflow: hidden;
+    margin-top: -16px;
+
+    
 }
 
 .container2 {
     position: absolute;
     left:0;
     right:0;
+
 }
 
 
@@ -191,4 +197,15 @@ body {
 
 #bgimg2 {
     margin-top: -500px;
+}
+ 
+
+
+
+
+
+.fa {
+    z-index: 999;
+    position: relative;
+    float:right;
 }
