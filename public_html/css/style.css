@@ -1,5 +1,5 @@
 .intro p {
-    color:lightgray;
+    color: lightgray;
     font-family: "Playfair Display", "Helvetica", serif;
     font-size: 2.5em;
     font-weight: 600;
@@ -8,7 +8,7 @@
 }
 
 .intro {
-    width:60%;
+    width: 60%;
     margin-left: 5%;
     margin-top: 10px;
 }
@@ -29,16 +29,23 @@ nav {
     font-size: 13px;
     margin: 0;
     background-image: url("http://i.imgur.com/pYmwqrj.jpg");
-    padding: 7px 10px 0px 0px ;
-
+    padding: 7px 10px 0px 0px;
+    position: fixed;
+    left:0;
+    right:0;
+    top:0;
+    
 }
+
 nav ul {
     list-style-type: none;
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 }
+
 nav ul li {
-    float:right;
+    float: right;
+    margin: 10px 0px;
 }
 
 nav ul li a {
@@ -49,21 +56,20 @@ nav ul li a {
     color: white;
 }
 
-li:hover a{
+li:hover a {
     color: black;
     transition: 0.2s;
 }
 
 body {
     background-color: black;
-    color:white;
+    color: white;
     margin: 0;
 }
 
 .logo {
     float: left;
     margin-left: 5%;
-   
 }
 
 #logo1 {
@@ -74,11 +80,10 @@ body {
 .code {
     font-family: "Courier New", "Code", sans-serif;
     margin-left: 5%;
-    
 }
 
 .code-1 {
-    margin-top: 80px;
+    margin-top: 120px;
 }
 
 .link {
@@ -93,11 +98,11 @@ body {
 }
 
 .link:visited {
-    color:rgba(69, 219, 255, 0.7);
+    color: rgba(69, 219, 255, 0.7);
 }
 
-.link:active{
-    color:black;
+.link:active {
+    color: black;
 }
 
 .traditional {
@@ -105,7 +110,6 @@ body {
 }
 
 .heading {
-    
     margin-top: 80px;
     font-family: "Playfair Display";
     font-weight: 900;
@@ -118,24 +122,23 @@ body {
     margin-left: 40%;
     margin-right: 10%;
 }
-.line{
-    height:5px;
+
+.line {
+    height: 5px;
     background-color: white;
-    
 }
 
 .thinline {
     height: 1px;
-    background:  darkgray;
+    background: darkgray;
     margin-left: 30px;
-
 }
 
-.work ul{
+.work ul {
     list-style-type: none;
-    margin:0;
+    margin: 0;
     margin-left: -30px;
-    padding:0;
+    padding: 0;
 }
 
 .work ul li p {
@@ -150,62 +153,69 @@ body {
     margin-left: 0;
 }
 
-
 .bg-image {
     min-width: 100%;
     max-width: 2000px;
-
     position: absolute;
     display: none;
-
-    
 }
-
 
 #darllink {
     position: relative;
 }
+
 .container {
     height: 100px;
     width: 100px;
-    background-color:red;
+    background-color: red;
     position: relative;
-
-    top:50%;
+    top: 50%;
 }
 
 .block {
     height: 70px;
     left: 0;
     right: 0;
-    position: relative;
+    position: absolute;
     overflow: hidden;
     margin-top: -16px;
-
-    
 }
 
 .container2 {
     position: absolute;
-    left:0;
-    right:0;
-
+    left: 0;
+    right: 0;
 }
-
-
-
 
 #bgimg2 {
     margin-top: -500px;
 }
- 
-
-
-
-
 
 .fa {
     z-index: 999;
     position: relative;
-    float:right;
+    float: right;
+}
+
+#darl {
+    overflow: visible;
+    height: 54px;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+#darl.expanded {
+    height: 300px;
+}
+
+#darl .block {
+    overflow: hidden;
+}
+
+#darl.expanded .block {
+    overflow: visible;
+    transition: all 0.5s ease-in-out;
 }
